@@ -1,0 +1,16 @@
+
+name: 'openapi to html'
+branding:
+  icon: "airplay"
+  color: "gray-dark"
+description: 'Take a openapi file and return html'
+inputs:
+  protobuf:  
+    description: 'an openapi file'
+    required: true
+outputs:
+  html: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
